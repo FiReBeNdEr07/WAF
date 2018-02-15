@@ -2,7 +2,7 @@
 Web application firewall for nginx reverse proxy using libmodsecurity and Owasp CRS
 
 ## 1. How it works
-![Architecture](../blob/master/conf/Mod_security.jpg?raw=true "Architecture")
+![Architecture](conf/Mod_security.jpg "Architecture")
 ## 2. Dependencies
 - Docker
 - Optional
