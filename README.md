@@ -11,9 +11,14 @@ Web application firewall for nginx reverse proxy using libmodsecurity and Owasp 
 - Clone the repository using `git clone`
 - Change the directory to newly cloned repo
 - Build the docker image using `docker image`
-```sh
-
-git clone https://github.com/CurlAnalytics/WAF.git
+```
+#Clone the repo
+$ git clone https://github.com/CurlAnalytics/WAF.git
+#Change the directory "WAF"
+$ cd WAF/
+$ ls
+#Find the Dockerfile and build image with the following command
+$ docker build --tag curl-waf .
 
 ```
 
