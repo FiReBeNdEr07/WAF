@@ -57,11 +57,10 @@ RUN wget https://github.com/SpiderLabs/owasp-modsecurity-crs/archive/v3.0.2.tar.
 
 RUN mkdir /etc/nginx/modsec && \
   rm /etc/nginx/conf.d/default.conf && \
-  wget http://172.17.0.1/default.conf -P /etc/nginx/conf.d/ && \
-  wget http://172.17.0.1/proxy.conf -P /etc/nginx/conf.d/ && \
-  wget http://172.17.0.1/echo.conf -P /etc/nginx/conf.d/ && \
-  wget http://172.17.0.1/modsecurity.conf -P /etc/nginx/modsec/ && \
-  wget http://172.17.0.1/main.conf -P /etc/nginx/modsec/ && \
+  wget https://pastebin.com/raw/Vimidh0E -P /etc/nginx/conf.d/default.conf && \
+  wget https://pastebin.com/raw/jwJ7419v -P /etc/nginx/conf.d/proxy.conf && \
+  wget https://pastebin.com/raw/v0WLC10a -P /etc/nginx/modsec/modsecurity.conf && \
+  wget https://pastebin.com/raw/zgVZvXMk -P /etc/nginx/modsec/main.conf && \
   echo "1"
 
 EXPOSE 80
