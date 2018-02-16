@@ -2,3 +2,4 @@ These config files are placed into pastebin for easy pull
 - https://pastebin.com/raw/Vimidh0E  # Default conf file
 - https://pastebin.com/raw/zgVZvXMk  # Main conf file for modsecurity
 - https://pastebin.com/raw/v0WLC10a  # Modsecurity config file to specify OWASP CRS
+- https://pastebin.com/raw/jwJ7419v  # Proxy config file that should changed as required
