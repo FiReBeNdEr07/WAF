@@ -12,6 +12,8 @@ Web application firewall for nginx reverse proxy using libmodsecurity and Owasp 
 - Change the directory to newly cloned repo
 - Build the docker image using `docker image`
 ```bash
+
+#Assuming user has root privilages
 #Clone the repo
 $ git clone https://github.com/CurlAnalytics/WAF.git
 #Change the directory "WAF"
@@ -20,7 +22,12 @@ $ ls
 #Find the Dockerfile and build image with the following command
 $ docker build --tag curl-waf .
 #Now using the "proxy.conf" file in the conf folder run the docker using following command
+#For linux
 $ docker run -v $(pwd)/conf/proxy.conf:/etc/nginx/conf.d/proxy.conf -p 80:80 --name curl curl-waf
+#For Windows
+$ docker.exe run -v $(pwd)\conf\proxy.conf:/etc/nginx/conf.d/proxy.conf -p 80:80 --name curl curl-waf
+# From the next time start docker container as below
+$ docker container start curl
 ```
 > Note: Make changes to proxy.conf as per the network requirement.
 > The name "curl" represent the container name and "curl-waf" represent the image name.
