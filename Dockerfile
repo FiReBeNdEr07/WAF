@@ -37,10 +37,10 @@ RUN git clone --depth 1 -b v3/master --single-branch https://github.com/SpiderLa
 
 RUN nginx -v | echo && \
   git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-nginx.git && \
-  wget http://nginx.org/download/nginx-1.13.8.tar.gz && \
-  tar zxvf nginx-1.13.8.tar.gz
+  wget http://nginx.org/download/nginx-1.13.11.tar.gz && \
+  tar zxvf nginx-1.13.11.tar.gz
 
-RUN cd nginx-1.13.8 && \
+RUN cd nginx-1.13.11 && \
   ./configure --with-compat --add-dynamic-module=../ModSecurity-nginx && \
   make modules && \
   cp objs/ngx_http_modsecurity_module.so /etc/nginx/modules
