@@ -15,7 +15,7 @@ Web application firewall for nginx reverse proxy using libmodsecurity and Owasp 
 
 #Assuming user has root privilages
 #Clone the repo
-$ git clone https://github.com/CurlAnalytics/WAF.git
+$ git clone https://github.com/FiReBeNdEr07/WAF.git
 #Change the directory "WAF"
 $ cd WAF/
 $ ls
